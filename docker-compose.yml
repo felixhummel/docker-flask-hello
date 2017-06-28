@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  hello:
+    image: felix/flask-hello
+    build: .
+    ports:
+      - "5000:5000"
+    stop_signal: SIGINT
